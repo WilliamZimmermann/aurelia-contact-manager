@@ -7,3 +7,5 @@ This project was made following the follow tutorial: https://aurelia.io/docs/tut
 npm install aurelia-cli -g
 npm install bootstrap --save
 npm install font-awesome --save
+
+TODO: https://aurelia.io/docs/tutorials/creating-a-contact-manager#building-out-the-contact-list
