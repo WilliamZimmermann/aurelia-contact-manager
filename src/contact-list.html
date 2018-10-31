@@ -1,0 +1,14 @@
+<template>
+  <div class="contact-list">
+    <h2>Lista de Contatos</h2>
+    <ul class="list-group">
+      <!-- We; ve used the $parent special value to reach outside of the list's schope and into the parent view-model... -->
+      <li repeat.for="contact of contacts" class="list-group-item ${contact.id === $parent.selectedId ? 'active' : '' }">
+        <a route-href="route: contacts; params.bind: { id:contact.id}" click.delegate="$parent.select(contact)">
+          <h4>${contact.firstName} ${contact.lastName}</h4>
+          <p>${contact.email}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
